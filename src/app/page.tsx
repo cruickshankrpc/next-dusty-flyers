@@ -15,7 +15,18 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <div className={styles.bgWrap}>
+      <Image src="/bg.jpeg"
+            className={styles.bgImg} alt="bg picture"
+        quality={100}
+        fill
+      sizes="100vw"
+  priority
+      >  
+    </Image>
+    </div>
         <div className={styles.content}>
+
         <Image
           className={styles.logo}
           src="/logo.png"
@@ -49,11 +60,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      <div className={styles.bgImg}>
-    </div>
+
       </main>
-      <footer className={styles.footer}>
-      </footer>
+      {/* <footer className={styles.footer}>
+      </footer> */}
     </div>
   );
 }

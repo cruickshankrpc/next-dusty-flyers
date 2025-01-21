@@ -4,20 +4,28 @@
   height: 100vh;
   width: 100vw;
   font-family: var(--font-geist-sans);
-  position: absolute;
+  /* position: absolute; */
+}
+
+.bgWrap {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .bgImg {
   background-image: url(/bg.jpeg);
-  height: 100vh;
-  width: 100vw;
+  /* height: 100vh;
+  width: 100vw; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
+  /* position: absolute; */
   object-fit: cover;
   opacity: 80%;
   z-index: 0;
+  background-blend-mode: hard-light;
   top: 0;
   left: 0;
   right: 0;
@@ -66,20 +74,29 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .bgImg {
+    opacity: 70%;
+  }
+
   .logo {
-    max-width: 18rem;
+    max-width: 16rem;
+    height: auto;
   }
 
   .subtitle {
     font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .iconContainer {
     width: 13rem;
   }
+
   .icon {
     max-height: 2.5rem;
   }
+
   .emailIcon {
     max-height: 2.8rem;
   }
