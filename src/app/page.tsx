@@ -16,12 +16,13 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <div className={styles.bgWrap}>
-      <Image src="/bg.jpeg"
-            className={styles.bgImg} alt="bg picture"
+      <Image 
+        src="/bg.jpeg"
+        className={styles.bgImg} alt="bg picture"
         quality={100}
         fill
-      sizes="100vw"
-  priority
+        sizes="100vw"
+        priority
       >  
     </Image>
     </div>
