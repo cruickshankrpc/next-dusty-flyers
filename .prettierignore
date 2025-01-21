@@ -1,0 +1,8 @@
+ node_modules
+ .next
+ coverage
+ .prettierignore
+ .stylelintignore
+ .eslintignore
+ *.log
+ docs
